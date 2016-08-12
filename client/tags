@@ -1,0 +1,116 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CXXFLAGS	Makefile	/^CXXFLAGS=-Wall  -std=c++11 -g -Wparentheses$/;"	m
+ClientTaskQueue	MySockClientTaskPool.cpp	/^	class ClientTaskQueue$/;"	c	namespace:MyNameSpace	file:
+Container	MyClientTaskManager.h	/^			typedef std::map<int, MySockClientTask*> Container;$/;"	t	class:MyNameSpace::MyClientTaskManager
+Container_IT	MyClientTaskManager.h	/^			typedef std::map<int, MySockClientTask*>::iterator Container_IT;$/;"	t	class:MyNameSpace::MyClientTaskManager
+MyClient	MyClient.h	/^			MyClient() : mUniqueId(0), mComplete(false)$/;"	f	class:MyNameSpace::MyClient
+MyClient	MyClient.h	/^	class MyClient$/;"	c	namespace:MyNameSpace
+MyClientIoThread	MySockClientTaskPool.cpp	/^		MyClientIoThread(MySockClientTaskPool *pool, bool j = true) : MyThread(j), mPool(pool)$/;"	f	class:MyNameSpace::MyClientIoThread
+MyClientIoThread	MySockClientTaskPool.cpp	/^	class MyClientIoThread : public MyThread, public ClientTaskQueue$/;"	c	namespace:MyNameSpace	file:
+MyClientRecycleThread	MySockClientTaskPool.cpp	/^		MyClientRecycleThread(MySockClientTaskPool *pool, bool j = true) : MyThread(j), mPool(pool)$/;"	f	class:MyNameSpace::MyClientRecycleThread
+MyClientRecycleThread	MySockClientTaskPool.cpp	/^	class MyClientRecycleThread : public MyThread, public ClientTaskQueue$/;"	c	namespace:MyNameSpace	file:
+MyClientTask	MyClientTask.h	/^			MyClientTask(int id, int ip, int port) : MySockClientTask(id, ip, port, 0, 0)$/;"	f	class:MyNameSpace::MyClientTask
+MyClientTask	MyClientTask.h	/^			MyClientTask(int id, int ip, int port, int serverId, int serverType, Dispatcher *iDispatcher, Dispatcher *oDispatcher) : MySockClientTask(id, ip, port, serverId, serverType), mInnerDispatcher(iDispatcher), mOutterDispatcher(oDispatcher)$/;"	f	class:MyNameSpace::MyClientTask
+MyClientTask	MyClientTask.h	/^	class MyClientTask : public MySockClientTask$/;"	c	namespace:MyNameSpace
+MyClientTaskManager	MyClientTaskManager.h	/^			MyClientTaskManager()$/;"	f	class:MyNameSpace::MyClientTaskManager
+MyClientTaskManager	MyClientTaskManager.h	/^	class MyClientTaskManager : public MySingleton<MyClientTaskManager>$/;"	c	namespace:MyNameSpace
+MyNameSpace	MyClient.cpp	/^namespace MyNameSpace$/;"	n	file:
+MyNameSpace	MyClient.h	/^namespace MyNameSpace$/;"	n
+MyNameSpace	MyClientTask.cpp	/^namespace MyNameSpace$/;"	n	file:
+MyNameSpace	MyClientTask.h	/^namespace MyNameSpace$/;"	n
+MyNameSpace	MyClientTaskManager.cpp	/^namespace MyNameSpace$/;"	n	file:
+MyNameSpace	MyClientTaskManager.h	/^namespace MyNameSpace$/;"	n
+MyNameSpace	MySockClientTask.cpp	/^namespace MyNameSpace$/;"	n	file:
+MyNameSpace	MySockClientTask.h	/^namespace MyNameSpace$/;"	n
+MyNameSpace	MySockClientTaskPool.cpp	/^namespace MyNameSpace$/;"	n	file:
+MyNameSpace	MySockClientTaskPool.h	/^namespace MyNameSpace$/;"	n
+MyNameSpace	MyTcpClient.cpp	/^namespace MyNameSpace$/;"	n	file:
+MyNameSpace	MyTcpClient.h	/^namespace MyNameSpace$/;"	n
+MySockClientTask	MySockClientTask.h	/^			MySockClientTask(int id, int ip, int port, int serverId, int serverType) :mId(id), mIp(ip), mPort(port), mSockfd(-1), mConn(false), mServerId(serverId), mServerType(serverType)$/;"	f	class:MyNameSpace::MySockClientTask
+MySockClientTask	MySockClientTask.h	/^	class MySockClientTask : public MyQueue$/;"	c	namespace:MyNameSpace
+MySockClientTaskPool	MySockClientTaskPool.h	/^			MySockClientTaskPool() $/;"	f	class:MyNameSpace::MySockClientTaskPool
+MySockClientTaskPool	MySockClientTaskPool.h	/^	class MySockClientTaskPool$/;"	c	namespace:MyNameSpace
+MyTcpClient	MyTcpClient.h	/^			MyTcpClient(int ip, int port, int reconn) : $/;"	f	class:MyNameSpace::MyTcpClient
+MyTcpClient	MyTcpClient.h	/^	class MyTcpClient$/;"	c	namespace:MyNameSpace
+_MYSOCK_CLIENT_TASK_H_	MySockClientTask.h	2;"	d
+_MYSOCK_CLIENT_TASK_POOL_H	MySockClientTaskPool.h	2;"	d
+_MY_CLIENT_H_	MyClient.h	2;"	d
+_MY_CLIENT_TASK_H_	MyClientTask.h	2;"	d
+__MY_CLIENT_TASK_MANAGER_H_	MyClientTaskManager.h	2;"	d
+__MY_TCP_CLIENT_H_	MyTcpClient.h	2;"	d
+add	MySockClientTaskPool.cpp	/^		void add(MySockClientTask *task)$/;"	f	class:MyNameSpace::MyClientIoThread
+add	MySockClientTaskPool.cpp	/^		void add(MySockClientTask *task)$/;"	f	class:MyNameSpace::MyClientRecycleThread
+addEpollEvent	MySockClientTask.cpp	/^	int MySockClientTask::addEpollEvent(int epfd, epoll_event & ev)$/;"	f	class:MyNameSpace::MySockClientTask
+addIoThread	MySockClientTaskPool.cpp	/^	void MySockClientTaskPool::addIoThread(MySockClientTask * task)$/;"	f	class:MyNameSpace::MySockClientTaskPool
+addRecycleThread	MySockClientTaskPool.cpp	/^	void MySockClientTaskPool::addRecycleThread(MySockClientTask *task)$/;"	f	class:MyNameSpace::MySockClientTaskPool
+addTask	MyClientTaskManager.cpp	/^	void MyClientTaskManager::addTask(MySockClientTask *task)$/;"	f	class:MyNameSpace::MyClientTaskManager
+addTask	MySockClientTaskPool.cpp	/^			void addTask(MySockClientTask *task)$/;"	f	class:MyNameSpace::ClientTaskQueue
+addTask	MySockClientTaskPool.cpp	/^	bool MySockClientTaskPool::addTask(MySockClientTask * task)$/;"	f	class:MyNameSpace::MySockClientTaskPool
+checkQueue	MySockClientTaskPool.cpp	/^			void checkQueue()$/;"	f	class:MyNameSpace::ClientTaskQueue
+cmdParse	MyClientTask.cpp	/^	bool MyClientTask::cmdParse(const char *msg, int len)$/;"	f	class:MyNameSpace::MyClientTask
+conn	MySockClientTask.cpp	/^	int MySockClientTask::conn()$/;"	f	class:MyNameSpace::MySockClientTask
+conn	MyTcpClient.cpp	/^	int MyTcpClient::conn()$/;"	f	class:MyNameSpace::MyTcpClient
+delEpollEvent	MySockClientTask.cpp	/^	int MySockClientTask::delEpollEvent(int epfd, epoll_event & ev)$/;"	f	class:MyNameSpace::MySockClientTask
+disConn	MySockClientTask.h	/^			void disConn()$/;"	f	class:MyNameSpace::MySockClientTask
+doProcessMsg	MyClientTaskManager.cpp	/^	bool MyClientTaskManager::doProcessMsg()$/;"	f	class:MyNameSpace::MyClientTaskManager
+epev	MySockClientTaskPool.cpp	/^		std::vector<epoll_event> epev;$/;"	m	class:MyNameSpace::MyClientIoThread	file:
+epfd	MySockClientTaskPool.cpp	/^		int epfd;$/;"	m	class:MyNameSpace::MyClientIoThread	file:
+fini	MySockClientTaskPool.cpp	/^	void MySockClientTaskPool::fini()$/;"	f	class:MyNameSpace::MySockClientTaskPool
+getId	MySockClientTask.h	/^			int getId()$/;"	f	class:MyNameSpace::MySockClientTask
+getMsg	MySockClientTask.cpp	/^	bool MySockClientTask::getMsg()$/;"	f	class:MyNameSpace::MySockClientTask
+getTaskById	MyClientTaskManager.cpp	/^	MySockClientTask * MyClientTaskManager::getTaskById(int id)$/;"	f	class:MyNameSpace::MyClientTaskManager
+getTaskCount	MySockClientTaskPool.cpp	/^		int getTaskCount()$/;"	f	class:MyNameSpace::MyClientIoThread
+getType	MySockClientTask.h	/^			int getType()$/;"	f	class:MyNameSpace::MySockClientTask
+init	MyClient.cpp	/^	bool MyClient::init(std::multimap<int, int> &ipPortPair)$/;"	f	class:MyNameSpace::MyClient
+init	MySockClientTaskPool.cpp	/^		bool init()$/;"	f	class:MyNameSpace::MyClientIoThread
+init	MySockClientTaskPool.cpp	/^	bool MySockClientTaskPool::init()$/;"	f	class:MyNameSpace::MySockClientTaskPool
+isConn	MySockClientTask.h	/^			bool isConn()$/;"	f	class:MyNameSpace::MySockClientTask
+isFini	MyClient.h	/^			bool isFini()$/;"	f	class:MyNameSpace::MyClient
+mClientTaskQueue	MySockClientTaskPool.cpp	/^			std::queue<MySockClientTask*, std::deque<MySockClientTask*> > mClientTaskQueue;$/;"	m	class:MyNameSpace::ClientTaskQueue	file:
+mClientTaskQueueTmp	MySockClientTaskPool.cpp	/^			std::queue<MySockClientTask*, std::deque<MySockClientTask*> > mClientTaskQueueTmp;$/;"	m	class:MyNameSpace::ClientTaskQueue	file:
+mComplete	MyClient.h	/^			bool mComplete;$/;"	m	class:MyNameSpace::MyClient
+mConn	MySockClientTask.h	/^			bool mConn;$/;"	m	class:MyNameSpace::MySockClientTask
+mId	MySockClientTask.h	/^			int mId;$/;"	m	class:MyNameSpace::MySockClientTask
+mInnerDispatcher	MyClientTask.h	/^			Dispatcher *mInnerDispatcher;$/;"	m	class:MyNameSpace::MyClientTask
+mIoThread	MySockClientTaskPool.h	/^			MyClientIoThread *mIoThread;$/;"	m	class:MyNameSpace::MySockClientTaskPool
+mIp	MySockClientTask.h	/^			int mIp;$/;"	m	class:MyNameSpace::MySockClientTask
+mIp	MyTcpClient.h	/^			int mIp;$/;"	m	class:MyNameSpace::MyTcpClient
+mLock	MyClientTaskManager.h	/^			MyLock mLock;$/;"	m	class:MyNameSpace::MyClientTaskManager
+mLock	MySockClientTaskPool.cpp	/^			MyLock mLock;$/;"	m	class:MyNameSpace::ClientTaskQueue	file:
+mOutterDispatcher	MyClientTask.h	/^			Dispatcher *mOutterDispatcher;$/;"	m	class:MyNameSpace::MyClientTask
+mPool	MySockClientTaskPool.cpp	/^		MySockClientTaskPool *mPool;$/;"	m	class:MyNameSpace::MyClientIoThread	file:
+mPool	MySockClientTaskPool.cpp	/^		MySockClientTaskPool *mPool;$/;"	m	class:MyNameSpace::MyClientRecycleThread	file:
+mPort	MySockClientTask.h	/^			int mPort;$/;"	m	class:MyNameSpace::MySockClientTask
+mPort	MyTcpClient.h	/^			int mPort;$/;"	m	class:MyNameSpace::MyTcpClient
+mReconn	MyTcpClient.h	/^			bool mReconn;$/;"	m	class:MyNameSpace::MyTcpClient
+mRecycleThread	MySockClientTaskPool.h	/^			MyClientRecycleThread *mRecycleThread;$/;"	m	class:MyNameSpace::MySockClientTaskPool
+mServerId	MySockClientTask.h	/^			int mServerId;$/;"	m	class:MyNameSpace::MySockClientTask
+mServerType	MySockClientTask.h	/^			int mServerType;$/;"	m	class:MyNameSpace::MySockClientTask
+mSock	MySockClientTask.h	/^			MySocket mSock;$/;"	m	class:MyNameSpace::MySockClientTask
+mSock	MyTcpClient.h	/^			int mSock;$/;"	m	class:MyNameSpace::MyTcpClient
+mSockfd	MySockClientTask.h	/^			int mSockfd;$/;"	m	class:MyNameSpace::MySockClientTask
+mTaskPool	MyClient.h	/^			MySockClientTaskPool mTaskPool;$/;"	m	class:MyNameSpace::MyClient
+mTasks	MyClientTaskManager.h	/^			Container mTasks;$/;"	m	class:MyNameSpace::MyClientTaskManager
+mUniqueId	MyClient.h	/^			uint32_t mUniqueId;$/;"	m	class:MyNameSpace::MyClient
+main	test.cpp	/^int main()$/;"	f
+mainLoop	MyClient.cpp	/^	void MyClient::mainLoop()$/;"	f	class:MyNameSpace::MyClient
+rcvBuffer	MySockClientTask.cpp	/^	int MySockClientTask::rcvBuffer()$/;"	f	class:MyNameSpace::MySockClientTask
+remove	MySockClientTaskPool.cpp	/^		void remove(MySockClientTask *task)$/;"	f	class:MyNameSpace::MyClientIoThread
+remove	MySockClientTaskPool.cpp	/^		void remove(MySockClientTask *task)$/;"	f	class:MyNameSpace::MyClientRecycleThread
+removeTask	MyClientTaskManager.cpp	/^	void MyClientTaskManager::removeTask(MySockClientTask *task)$/;"	f	class:MyNameSpace::MyClientTaskManager
+run	MySockClientTaskPool.cpp	/^	void MyClientIoThread::run()$/;"	f	class:MyNameSpace::MyClientIoThread
+run	MySockClientTaskPool.cpp	/^	void MyClientRecycleThread::run()$/;"	f	class:MyNameSpace::MyClientRecycleThread
+sendDataWithBuffer	MySockClientTask.cpp	/^	int MySockClientTask::sendDataWithBuffer(const char *buf, uint32_t len)$/;"	f	class:MyNameSpace::MySockClientTask
+syncSendBuf	MySockClientTask.cpp	/^	int MySockClientTask::syncSendBuf()$/;"	f	class:MyNameSpace::MySockClientTask
+taskSet	MySockClientTaskPool.cpp	/^		std::set<MySockClientTask *> taskSet;$/;"	m	class:MyNameSpace::MyClientIoThread	file:
+taskSet	MySockClientTaskPool.cpp	/^		std::set<MySockClientTask *> taskSet;$/;"	m	class:MyNameSpace::MyClientRecycleThread	file:
+testSend	MyClientTaskManager.cpp	/^	void MyClientTaskManager::testSend()$/;"	f	class:MyNameSpace::MyClientTaskManager
+~MyClient	MyClient.h	/^			~MyClient()$/;"	f	class:MyNameSpace::MyClient
+~MyClientIoThread	MySockClientTaskPool.cpp	/^		~MyClientIoThread()$/;"	f	class:MyNameSpace::MyClientIoThread
+~MyClientTaskManager	MyClientTaskManager.h	/^			~MyClientTaskManager()$/;"	f	class:MyNameSpace::MyClientTaskManager
+~MySockClientTaskPool	MySockClientTaskPool.cpp	/^	MySockClientTaskPool::~MySockClientTaskPool()$/;"	f	class:MyNameSpace::MySockClientTaskPool
