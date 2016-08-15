@@ -14,6 +14,9 @@
 #include <sys/types.h>
 #include <sys/shm.h>
 
+#include <signal.h>
+#include <unistd.h>
+
 //static const char _moduleName[] = "heha ";
 bool stockmeminit()
 {
@@ -37,7 +40,11 @@ bool stockmeminit()
   return true;
 
 }
-
+void LookShareMemoryEveryTime(int sig)
+{
+   MyNameSpace::MyShareMemoryData::getInstance().ReadOrderShareMemory();
+   alarm(2);
+}
 
 int main()
 {
@@ -55,8 +62,6 @@ int main()
   mem.offer.max=500000
   mem.industry.max=50
   mem.stock_index.max=1000*/
-  //just test
- MyNameSpace::MyOrderData::getInstance().ReadOrderShareMemory();
   MEM_CONFIG_ALL do_test ;
   MyNameSpace::MyServer ser;
  do_test.shareConfig.setIdMapMax =10;
@@ -77,15 +82,18 @@ int main()
 // ReadOrderShareMemory();
 // PrintEvaluateMemAllocationStats(&PrintEvaluateMemAllocationStats);
 //INFO(_moduleName, "获得共享内存Id失败! info   adkfdkdkaldjkafljlhdalkfdalog  %s\n", "hello world ");
-PrintMemoryStats() ;
+ PrintMemoryStats() ;
 
-  InitRootLogConfigExceptive("log.conf","log_root","log.main");
+ InitRootLogConfigExceptive("log.conf","log_root","log.main");
 
  if (!ser.init(50113))
   {
     std::cerr<<__FUNCTION__<<"("<<__LINE__<<"): server init fail"<<std::endl;
     exit(1);
   }
+signal(SIGALRM, LookShareMemoryEveryTime); 
+
+  alarm(2);
 
 
   ser.mainLoop();
