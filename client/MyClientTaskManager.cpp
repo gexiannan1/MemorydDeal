@@ -13,6 +13,10 @@
 #include<libxml/tree.h>
 #include <iostream>
 #include <vector>
+#include <sys/types.h>
+#include <sys/shm.h>
+ #include <sys/ipc.h>
+#include "../mem/shm_define.h"
 using namespace std;
 
 namespace MyNameSpace
@@ -116,5 +120,4 @@ namespace MyNameSpace
 
 
     }
-}
 

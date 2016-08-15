@@ -1,4 +1,4 @@
-CPPFLAGS = -Wall -std=c++11 -g -Wparentheses -Wsequence-point
+CPPFLAGS = -Wall -std=c++11 -g  -Wparentheses -Wsequence-point
 .PHONY : all
 all:gexn
 gexn: server.o  MySocket.o MySockTaskManager.o  MyThread.o MySockTaskPool.o MyTcpServer.o MyBaseServer.o MySockTask.o MyServer.o MyServerMsgProcess.o MyServerTask.o MatchingOrder.o libmemmory.so 
@@ -28,9 +28,11 @@ MyServerTask.o : ./base/MyTask.cpp ./base/MyTask.h MyServerTask.h MyServerTask.c
 MatchingOrder.o : ./MatchingOrder.cpp ./MatchingOrder.h
 	g++ $(CPPFLAGS) -c MatchingOrder.cpp
 libmemmory.so : ./mem/memory.h ./mem/memory.c ./mem/util/log/log.h ./mem/util/log/log.c ./mem/util/log/log_level.h ./mem/util/log/log_mode.h  ./mem/util/log/log_level.c ./mem/util/log/log_mode.c  ./mem/env/env.h ./mem/env/env.c ./mem/util/env_base/env_base.h  ./mem/util/env_base/env_base.c ./mem/util/file/common_file.h ./mem/util/file/common_file.c ./mem/util/time/common_time.h ./mem/util/time/common_time.c ./mem/util/string/common_str.h ./mem/util/string/common_str.c ./mem/util/macro/macro.h ./mem/util/macro/macro.c  ./mem/util/log/log_file.h ./mem/util/log/log_file.c ./mem/util/log/log_impl_console.h ./mem/util/log/log_impl_console.c ./mem/util/log/log_config.h ./mem/util/log/log_config.c  ./mem/util/ini/get_ini.h ./mem/util/ini/get_ini.c ./mem/model/order.h ./mem/model/model_te.h ./mem/model/model.h ./mem/model/stock.h ./mem/model/price.h ./mem/model/industry.h ./mem/model/category.h
-	g++ $(CPPFLAGS) -fPIC -shared -o $@ ./mem/memory.c ./mem/util/log/log.c ./mem/util/log/log_level.c ./mem/util/log/log_mode.c  ./mem/env/env.c ./mem/util/env_base/env_base.c ./mem/util/file/common_file.c ./mem/util/time/common_time.c ./mem/util/string/common_str.c ./mem/util/macro/macro.c ./mem/util/log/log_file.c ./mem/util/log/log_impl_console.c ./mem/util/log/log_config.c ./mem/util/ini/get_ini.c ./mem/model/order.c ./mem/model/stock.c ./mem/model/price.c ./mem/model/industry.c ./mem/model/category.c
+	g++ $(CPPFLAGS) -fPIC  -shared -o $@ ./mem/memory.c ./mem/util/log/log.c ./mem/util/log/log_level.c ./mem/util/log/log_mode.c  ./mem/env/env.c ./mem/util/env_base/env_base.c ./mem/util/file/common_file.c ./mem/util/time/common_time.c ./mem/util/string/common_str.c ./mem/util/macro/macro.c ./mem/util/log/log_file.c ./mem/util/log/log_impl_console.c ./mem/util/log/log_config.c ./mem/util/ini/get_ini.c ./mem/model/order.c ./mem/model/stock.c ./mem/model/price.c ./mem/model/industry.c ./mem/model/category.c
 
 clean:
 	rm -rf gexn
 	rm -rf *.o
 	rm -rf *.so
+install:
+	sudo cp libmemmory.so /lib/x86_64-linux-gnu/libmemmory.so

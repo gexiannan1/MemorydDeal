@@ -38,52 +38,7 @@ bool stockmeminit()
 
 }
 
-void ReadOrderShareMemory()
-{
-  int     memId = 0;
-  static void * _shareMemoryAddress = SHM_FAILED;
-  if ((memId = shmget(16869210, 0, SHM_MODE_RW)) < 0) {
-    printf("get  share memory id  failed \n");
-    return ;
-  }
-  if ((_shareMemoryAddress = shmat(memId, NULL, 0666)) == SHM_FAILED) {
-    printf("connect share memory failed \n");
-    return ;
-  }
 
-  char *isincod = "ffffffffffff";
-  printf("memId   %d _shareMemoryAddress %0x \n",   memId  , _shareMemoryAddress);
-  STOCK_CS *stock = GetStockByIsinCod(isincod);
-  if(!stock)
-  {
-    std::cout  << "error :not found this stock" << std::cout ;
-  }
-  ORDER_CS *order = NULL;
-  order = GetOrder(stock->firstOrderSell);
-  if(!order)
-  {
-    std::cout  << "error :not found this order" << std::cout ;
-  }
-  if(order->priceLevel ==  -1 )
-  {
-    std::cout  << "not found buy order" << std::cout ;
-
-  }
-  int index =  order->nextStock;
-  while(index >=  0)
-  {
-    order = GetOrder(index);
-    if(order)
-    {
-
-      printf(" orderNo: %llu  orderPrice %ld orderQty %ld \n",order->orderNo,order->orderPrice , order->orderQty);
-    }
-
-    index = order->nextStock ;
-  }
-  return ;
-
-}
 int main()
 {
   //just for test
@@ -100,6 +55,8 @@ int main()
   mem.offer.max=500000
   mem.industry.max=50
   mem.stock_index.max=1000*/
+  //just test
+ MyNameSpace::MyOrderData::getInstance().ReadOrderShareMemory();
   MEM_CONFIG_ALL do_test ;
   MyNameSpace::MyServer ser;
  do_test.shareConfig.setIdMapMax =10;
@@ -124,7 +81,7 @@ PrintMemoryStats() ;
 
   InitRootLogConfigExceptive("log.conf","log_root","log.main");
 
- if (!ser.init(50003))
+ if (!ser.init(50113))
   {
     std::cerr<<__FUNCTION__<<"("<<__LINE__<<"): server init fail"<<std::endl;
     exit(1);

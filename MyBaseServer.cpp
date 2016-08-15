@@ -9,6 +9,7 @@ namespace MyNameSpace
   {
     void handlerHup(int sig)
     {
+      printf("get hup signal \n");
       std::cerr<<__FUNCTION__<<"("<<__LINE__<<"): get hup signal"<<std::endl;
       MyBaseServer::Container_IT iter = MyBaseServer::mServerContainer.begin();
       for (; iter != MyBaseServer::mServerContainer.end(); ++iter)

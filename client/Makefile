@@ -44,3 +44,4 @@ libmemmory.so : ../mem/memory.h ../mem/memory.c ../mem/util/log/log.h ../mem/uti
 clean:
 	rm -rf test
 	rm -rf *.o
+	rm -rf *.so

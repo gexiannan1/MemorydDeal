@@ -84,7 +84,7 @@ namespace MyNameSpace
     ret = ::connect(mSockfd, (const sockaddr *)&addr, sizeof(addr));
     if (0 != ret)
     {
-      std::cerr<<__FUNCTION__<<"("<<__LINE__<<") ip :"<<mIp<<"port: "<<mPort <<" connect fail"<<std::endl;
+      std::cerr<<__FUNCTION__<<"("<<__LINE__<<") ip :"<<mIp<<"port: "<<mPort <<" socket connect fail"<<std::endl;
       return false;
     }
     mConn = true;

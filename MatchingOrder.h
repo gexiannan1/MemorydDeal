@@ -5,6 +5,8 @@
 #include "./mem/model/model.h"
 #include "./mem/memory.h"
 #include <iostream>
+#include "./base/MySingleton.h"
+
 class Order
 {
   public:
@@ -28,3 +30,23 @@ class Order
    void  DeleteFromBuyQueue(ORDER_CS* order,long long amount);
    int GetBuyOrderTotalNum(BID_CS*, char*);
 };
+
+namespace MyNameSpace
+{
+  class MyShareMemoryData : public MySingleton<MyShareMemoryData>
+  {
+    private:
+      friend class MySingleton<MyShareMemoryData>;
+      MyShareMemoryData()
+      {
+
+      }
+      ~MyShareMemoryData()
+      {
+
+      }
+    public:
+        void ReadOrderShareMemory();
+  };
+}
+

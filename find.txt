@@ -1,0 +1,125 @@
+/home/gexiannan/project/mem/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/project/mem/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/project/mem/shmread.c:  shm = shmat(shmid , 0 , 0 );
+/home/gexiannan/project/mem/shmread.c:    fprintf(stderr ,"shmat failer\n");
+/home/gexiannan/backup/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/backup/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/backup/MemMatchingSys/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/backup/MemMatchingSys/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/Memory/shmwrite.c:  shm = shmat(shmid ,(void *)0,0 );
+/home/gexiannan/Memory/shmwrite.c:    fprintf(stderr,"shmat failed \n");
+/home/gexiannan/Memory/shmread.c:  shm = shmat(shmid , 0 , 0 );
+/home/gexiannan/Memory/shmread.c:    fprintf(stderr ,"shmat failer\n");
+/home/gexiannan/MemMatchingSys/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/MemMatchingSys/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/MemMatchingSys/shmread.c:  shm = shmat(shmid , 0 , 0 );
+/home/gexiannan/MemMatchingSys/shmread.c:    fprintf(stderr ,"shmat failer\n");
+/home/gexiannan/tmp/project/mem/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/tmp/project/mem/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/tmp/project/mem/shmread.c:  shm = shmat(shmid , 0 , 0 );
+/home/gexiannan/tmp/project/mem/shmread.c:    fprintf(stderr ,"shmat failer\n");
+/home/gexiannan/qe/src/public/memory/rebuilder_memory.c:        if ((_rebuilderShareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/qe/src/public/memory/rebuilder_memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/qe/src/public/memory/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/gexiannan/qe/src/public/memory/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/liuyanan/MemorydDeal/mem/memory.c:        if ((_shareMemoryAddress = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/liuyanan/MemorydDeal/mem/memory.c:    if ((memAddr = shmat(memId, NULL, 0)) == SHM_FAILED) {
+/home/liuyanan/MemorydDeal/mem/shmread.c:  shm = shmat(shmid , 0 , 0 );
+/home/liuyanan/MemorydDeal/mem/shmread.c:    fprintf(stderr ,"shmat failer\n");
+/usr/src/linux-headers-3.13.0-32/arch/arm64/include/asm/unistd32.h:__SYSCALL(305, compat_sys_shmat)
+/usr/src/linux-headers-3.13.0-32/arch/ia64/include/uapi/asm/unistd.h:#define __NR_shmat			1114
+/usr/src/linux-headers-3.13.0-32/arch/sh/include/uapi/asm/unistd_64.h:#define __NR_shmat		244
+/usr/src/linux-headers-3.13.0-32/arch/microblaze/include/uapi/asm/unistd.h:#define __NR_shmat		335 /* ok */
+/usr/src/linux-headers-3.13.0-32/arch/arm/include/uapi/asm/unistd.h:#define __NR_shmat			(__NR_SYSCALL_BASE+305)
+/usr/src/linux-headers-3.13.0-32/arch/arm/include/asm/shmparam.h: * Enforce SHMLBA in shmat
+/usr/src/linux-headers-3.13.0-32/arch/avr32/include/uapi/asm/unistd.h:#define __NR_shmat		274
+/usr/src/linux-headers-3.13.0-32/arch/arc/include/asm/shmparam.h:/* Enforce SHMLBA in shmat */
+/usr/src/linux-headers-3.13.0-32/arch/parisc/include/uapi/asm/unistd.h:#define __NR_HPUX_shmat                 165
+/usr/src/linux-headers-3.13.0-32/arch/parisc/include/uapi/asm/unistd.h:#define __NR_shmat              (__NR_Linux + 192)
+/usr/src/linux-headers-3.13.0-32/arch/alpha/include/uapi/asm/unistd.h:#define __NR_osf_shmat		209
+/usr/src/linux-headers-3.13.0-32/arch/mips/include/uapi/asm/unistd.h:#define __NR_shmat			(__NR_Linux +  29)
+/usr/src/linux-headers-3.13.0-32/arch/mips/include/uapi/asm/unistd.h:#define __NR_shmat			(__NR_Linux +  29)
+/usr/src/linux-headers-3.13.0-32/arch/blackfin/include/uapi/asm/unistd.h:#define __NR_shmat		338
+/usr/src/linux-headers-3.13.0-32/arch/xtensa/include/uapi/asm/unistd.h:#define __NR_shmat				 93
+/usr/src/linux-headers-3.13.0-32/arch/xtensa/include/uapi/asm/unistd.h:__SYSCALL( 93, xtensa_shmat, 4)
+/usr/src/linux-headers-3.13.0-32/arch/xtensa/include/asm/syscall.h:asmlinkage long xtensa_shmat(int, char __user *, int);
+/usr/src/linux-headers-3.13.0-32/include/linux/security.h: * @shm_shmat:
+/usr/src/linux-headers-3.13.0-32/include/linux/security.h: *	Check permissions prior to allowing the shmat system call to attach the
+/usr/src/linux-headers-3.13.0-32/include/linux/security.h:	int (*shm_shmat) (struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-32/include/linux/security.h:int security_shm_shmat(struct shmid_kernel *shp, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-32/include/linux/security.h:static inline int security_shm_shmat(struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-32/include/linux/syscalls.h:asmlinkage long sys_shmat(int shmid, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-32/include/linux/compat.h:asmlinkage long compat_sys_shmat(int shmid, compat_uptr_t shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-32/include/linux/shm.h:long do_shmat(int shmid, char __user *shmaddr, int shmflg, unsigned long *addr,
+/usr/src/linux-headers-3.13.0-32/include/linux/shm.h:static inline long do_shmat(int shmid, char __user *shmaddr,
+/usr/src/linux-headers-3.13.0-32/include/uapi/asm-generic/unistd.h:#define __NR_shmat 196
+/usr/src/linux-headers-3.13.0-32/include/uapi/asm-generic/unistd.h:__SC_COMP(__NR_shmat, sys_shmat, compat_sys_shmat)
+/usr/src/linux-headers-3.13.0-32-generic/arch/x86/include/generated/uapi/asm/unistd_64.h:#define __NR_shmat 30
+/usr/src/linux-headers-3.13.0-32-generic/arch/x86/include/generated/uapi/asm/unistd_x32.h:#define __NR_shmat (__X32_SYSCALL_BIT + 30)
+/usr/src/linux-headers-3.13.0-32-generic/arch/x86/include/generated/asm/syscalls_64.h:__SYSCALL_COMMON(30, sys_shmat, sys_shmat)
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/security.h: * @shm_shmat:
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/security.h: *	Check permissions prior to allowing the shmat system call to attach the
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/security.h:	int (*shm_shmat) (struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/security.h:int security_shm_shmat(struct shmid_kernel *shp, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/security.h:static inline int security_shm_shmat(struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/syscalls.h:asmlinkage long sys_shmat(int shmid, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/compat.h:asmlinkage long compat_sys_shmat(int shmid, compat_uptr_t shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/shm.h:long do_shmat(int shmid, char __user *shmaddr, int shmflg, unsigned long *addr,
+/usr/src/linux-headers-3.13.0-32-generic/include/linux/shm.h:static inline long do_shmat(int shmid, char __user *shmaddr,
+/usr/src/linux-headers-3.13.0-65-generic/arch/x86/include/generated/uapi/asm/unistd_64.h:#define __NR_shmat 30
+/usr/src/linux-headers-3.13.0-65-generic/arch/x86/include/generated/uapi/asm/unistd_x32.h:#define __NR_shmat (__X32_SYSCALL_BIT + 30)
+/usr/src/linux-headers-3.13.0-65-generic/arch/x86/include/generated/asm/syscalls_64.h:__SYSCALL_COMMON(30, sys_shmat, sys_shmat)
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/security.h: * @shm_shmat:
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/security.h: *	Check permissions prior to allowing the shmat system call to attach the
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/security.h:	int (*shm_shmat) (struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/security.h:int security_shm_shmat(struct shmid_kernel *shp, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/security.h:static inline int security_shm_shmat(struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/syscalls.h:asmlinkage long sys_shmat(int shmid, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/compat.h:asmlinkage long compat_sys_shmat(int shmid, compat_uptr_t shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/shm.h:long do_shmat(int shmid, char __user *shmaddr, int shmflg, unsigned long *addr,
+/usr/src/linux-headers-3.13.0-65-generic/include/linux/shm.h:static inline long do_shmat(int shmid, char __user *shmaddr,
+/usr/src/linux-headers-3.13.0-65/arch/arm64/include/asm/unistd32.h:__SYSCALL(305, compat_sys_shmat)
+/usr/src/linux-headers-3.13.0-65/arch/ia64/include/uapi/asm/unistd.h:#define __NR_shmat			1114
+/usr/src/linux-headers-3.13.0-65/arch/sh/include/uapi/asm/unistd_64.h:#define __NR_shmat		244
+/usr/src/linux-headers-3.13.0-65/arch/microblaze/include/uapi/asm/unistd.h:#define __NR_shmat		335 /* ok */
+/usr/src/linux-headers-3.13.0-65/arch/arm/include/uapi/asm/unistd.h:#define __NR_shmat			(__NR_SYSCALL_BASE+305)
+/usr/src/linux-headers-3.13.0-65/arch/arm/include/asm/shmparam.h: * Enforce SHMLBA in shmat
+/usr/src/linux-headers-3.13.0-65/arch/avr32/include/uapi/asm/unistd.h:#define __NR_shmat		274
+/usr/src/linux-headers-3.13.0-65/arch/arc/include/asm/shmparam.h:/* Enforce SHMLBA in shmat */
+/usr/src/linux-headers-3.13.0-65/arch/parisc/include/uapi/asm/unistd.h:#define __NR_HPUX_shmat                 165
+/usr/src/linux-headers-3.13.0-65/arch/parisc/include/uapi/asm/unistd.h:#define __NR_shmat              (__NR_Linux + 192)
+/usr/src/linux-headers-3.13.0-65/arch/alpha/include/uapi/asm/unistd.h:#define __NR_osf_shmat		209
+/usr/src/linux-headers-3.13.0-65/arch/mips/include/uapi/asm/unistd.h:#define __NR_shmat			(__NR_Linux +  29)
+/usr/src/linux-headers-3.13.0-65/arch/mips/include/uapi/asm/unistd.h:#define __NR_shmat			(__NR_Linux +  29)
+/usr/src/linux-headers-3.13.0-65/arch/blackfin/include/uapi/asm/unistd.h:#define __NR_shmat		338
+/usr/src/linux-headers-3.13.0-65/arch/xtensa/include/uapi/asm/unistd.h:#define __NR_shmat				 93
+/usr/src/linux-headers-3.13.0-65/arch/xtensa/include/uapi/asm/unistd.h:__SYSCALL( 93, xtensa_shmat, 4)
+/usr/src/linux-headers-3.13.0-65/arch/xtensa/include/asm/syscall.h:asmlinkage long xtensa_shmat(int, char __user *, int);
+/usr/src/linux-headers-3.13.0-65/include/linux/security.h: * @shm_shmat:
+/usr/src/linux-headers-3.13.0-65/include/linux/security.h: *	Check permissions prior to allowing the shmat system call to attach the
+/usr/src/linux-headers-3.13.0-65/include/linux/security.h:	int (*shm_shmat) (struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-65/include/linux/security.h:int security_shm_shmat(struct shmid_kernel *shp, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-65/include/linux/security.h:static inline int security_shm_shmat(struct shmid_kernel *shp,
+/usr/src/linux-headers-3.13.0-65/include/linux/syscalls.h:asmlinkage long sys_shmat(int shmid, char __user *shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-65/include/linux/compat.h:asmlinkage long compat_sys_shmat(int shmid, compat_uptr_t shmaddr, int shmflg);
+/usr/src/linux-headers-3.13.0-65/include/linux/shm.h:long do_shmat(int shmid, char __user *shmaddr, int shmflg, unsigned long *addr,
+/usr/src/linux-headers-3.13.0-65/include/linux/shm.h:static inline long do_shmat(int shmid, char __user *shmaddr,
+/usr/src/linux-headers-3.13.0-65/include/uapi/asm-generic/unistd.h:#define __NR_shmat 196
+/usr/src/linux-headers-3.13.0-65/include/uapi/asm-generic/unistd.h:__SC_COMP(__NR_shmat, sys_shmat, compat_sys_shmat)
+/usr/lib/perl/5.18.2/CORE/config.h: *	This symbol holds the return type of the shmat() system call.
+/usr/lib/perl/5.18.2/CORE/config.h: *	a prototype for shmat().  Otherwise, it is up to the program to
+/usr/lib/perl/5.18.2/CORE/config.h: *	guess one.  Shmat_t shmat(int, Shmat_t, int) is a good guess,
+/usr/lib/perl/5.18.2/CORE/uconfig.h: *	This symbol holds the return type of the shmat() system call.
+/usr/lib/perl/5.18.2/CORE/uconfig.h: *	a prototype for shmat().  Otherwise, it is up to the program to
+/usr/lib/perl/5.18.2/CORE/uconfig.h: *	guess one.  Shmat_t shmat(int, Shmat_t, int) is a good guess,
+/usr/include/asm-generic/unistd.h:#define __NR_shmat 196
+/usr/include/asm-generic/unistd.h:__SC_COMP(__NR_shmat, sys_shmat, compat_sys_shmat)
+/usr/include/x86_64-linux-gnu/sys/shm.h:extern void *shmat (int __shmid, const void *__shmaddr, int __shmflg)
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:#define __NR_shmat 30
+/usr/include/x86_64-linux-gnu/asm/unistd_x32.h:#define __NR_shmat (__X32_SYSCALL_BIT + 30)
+/usr/include/x86_64-linux-gnu/bits/syscall.h:#define SYS_shmat __NR_shmat
+/usr/include/x86_64-linux-gnu/bits/syscall.h:#define SYS_shmat __NR_shmat
+/usr/include/x86_64-linux-gnu/bits/shm.h:/* Flags for `shmat'.  */
+/usr/include/x86_64-linux-gnu/bits/shm.h:typedef __syscall_ulong_t shmatt_t;
+/usr/include/x86_64-linux-gnu/bits/shm.h:    __time_t shm_atime;			/* time of last shmat() */
+/usr/include/x86_64-linux-gnu/bits/shm.h:    shmatt_t shm_nattch;		/* number of current attaches */

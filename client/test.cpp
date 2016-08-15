@@ -18,7 +18,7 @@ int main()
   MyNameSpace::MyOrderData::getInstance().initXml();
   MyNameSpace::MyClient client;
   std::multimap<int, int> ipPortPair;
-  ipPortPair.insert(std::pair<int, int>(INADDR_ANY, 50003));
+  ipPortPair.insert(std::pair<int, int>(INADDR_ANY, 50113));
   if (!client.init(ipPortPair))
   {
     std::cerr<<__FUNCTION__<<"("<<__LINE__<<"): client init fail"<<std::endl;

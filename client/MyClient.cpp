@@ -17,7 +17,7 @@ namespace MyNameSpace
       if (NULL != task)
       {
         MyClientTaskManager::getInstance().addTask(task);
-        mTaskPool.addTask(task);
+     mTaskPool.addTask(task);
       }
     }
     return true;
